@@ -40,6 +40,7 @@ CONFIG = {
 RESEND_API_KEY = os.getenv("RESEND_API_KEY", "")
 RESEND_TO_EMAIL = os.getenv("RESEND_TO_EMAIL", "")
 RESEND_FROM_EMAIL = os.getenv("RESEND_FROM_EMAIL", "onboarding@resend.dev")
+SEND_TEST_EMAIL_ONCE = os.getenv("SEND_TEST_EMAIL_ONCE", "") == "1"
 
 API_URL = (
     "https://in.bookmyshow.com/api/movies-data/v4/"
@@ -482,7 +483,7 @@ def detect_district_changes(old_state, new_state):
 def send_email(subject, changes, bms_shows, district_state):
     if not RESEND_API_KEY or not RESEND_TO_EMAIL:
         print("Skipping email: RESEND_API_KEY or RESEND_TO_EMAIL is missing.")
-        return
+        return False
 
     now = datetime.now().strftime("%d %b %Y, %I:%M %p")
     plain = [subject, f"Checked at: {now}", "", "Changes:"]
@@ -521,6 +522,7 @@ def send_email(subject, changes, bms_shows, district_state):
     if response.status_code not in (200, 201):
         raise RuntimeError(f"Resend failed: {response.status_code} {response.text}")
     print(f"Email sent to {RESEND_TO_EMAIL}")
+    return True
 
 
 def load_state():
@@ -599,6 +601,7 @@ def main():
     new_state = {
         "bookmyshow": build_bms_state(bms_shows, bms_dates),
         "district": district_state,
+        "test_email_sent": old_state.get("test_email_sent", False),
     }
 
     changes = []
@@ -606,8 +609,6 @@ def main():
         detect_bms_changes(old_state.get("bookmyshow", {}), new_state["bookmyshow"])
     )
     changes.extend(detect_district_changes(old_state.get("district", {}), district_state))
-
-    save_state(new_state)
 
     print(f"BookMyShow matching shows: {len(bms_shows)}")
     print(
@@ -622,6 +623,22 @@ def main():
         send_email(subject, changes, bms_shows, district_state)
     else:
         print("No changes.")
+
+    if SEND_TEST_EMAIL_ONCE and not new_state["test_email_sent"]:
+        sent = send_email(
+            "Test Email: The Odyssey ticket notifier is working",
+            [
+                "This is a one-time test email from the GitHub Actions ticket notifier.",
+                "Future scheduled runs will not send this test email again unless ticket_state.json is reset.",
+            ],
+            bms_shows,
+            district_state,
+        )
+        if sent:
+            new_state["test_email_sent"] = True
+            print("One-time test email sent and recorded in state.")
+
+    save_state(new_state)
 
 
 if __name__ == "__main__":

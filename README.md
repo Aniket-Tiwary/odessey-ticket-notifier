@@ -67,7 +67,18 @@ BMS_TIME
 DISTRICT_URLS
 DISTRICT_MOVIE_TERMS
 DISTRICT_FORMAT
+SEND_TEST_EMAIL_ONCE
 ```
+
+To test Resend delivery once, set this repository variable:
+
+```text
+SEND_TEST_EMAIL_ONCE=1
+```
+
+Run the workflow manually. If the email sends successfully, the script records
+`test_email_sent: true` in `ticket_state.json`, so scheduled runs do not keep
+sending test emails.
 
 For a local/VPS cron job every 5 minutes:
 
