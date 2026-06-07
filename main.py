@@ -599,7 +599,6 @@ def main():
     new_state = {
         "bookmyshow": build_bms_state(bms_shows, bms_dates),
         "district": district_state,
-        "last_checked_at": datetime.now().isoformat(timespec="seconds"),
     }
 
     changes = []
