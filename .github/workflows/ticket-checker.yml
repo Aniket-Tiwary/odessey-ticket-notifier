@@ -1,0 +1,44 @@
+name: Ticket Checker
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+
+jobs:
+  check-tickets:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+
+      - name: Run checker
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          RESEND_TO_EMAIL: ${{ secrets.RESEND_TO_EMAIL }}
+          RESEND_FROM_EMAIL: ${{ secrets.RESEND_FROM_EMAIL }}
+          BMS_URL: ${{ vars.BMS_URL }}
+          BMS_DATES: ${{ vars.BMS_DATES }}
+          BMS_THEATRE: ${{ vars.BMS_THEATRE }}
+          BMS_TIME: ${{ vars.BMS_TIME }}
+          BMS_FORMAT: ${{ vars.BMS_FORMAT }}
+          DISTRICT_URLS: ${{ vars.DISTRICT_URLS }}
+          DISTRICT_MOVIE_TERMS: ${{ vars.DISTRICT_MOVIE_TERMS }}
+          DISTRICT_FORMAT: ${{ vars.DISTRICT_FORMAT }}
+        run: python main.py
+
+      - name: Commit updated state
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add ticket_state.json
+          git diff --cached --quiet || (git commit -m "chore: update ticket state [skip ci]" && git push)

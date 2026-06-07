@@ -1,0 +1,10 @@
+[project]
+name = "odyssey-ticket-notifier"
+version = "0.1.0"
+description = "BookMyShow and District ticket monitor with email alerts"
+requires-python = ">=3.11"
+dependencies = [
+]
+
+[tool.uv]
+package = false

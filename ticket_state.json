@@ -1,0 +1,25 @@
+{
+  "bookmyshow": {
+    "shows": {},
+    "dates": {}
+  },
+  "district": {
+    "https://www.district.in/movies/inox-megaplex-phoenix-mall-of-the-millennium-wakad-in-pune-CD1023543": {
+      "source": "District",
+      "venue": "INOX Megaplex, Phoenix Mall of the Millennium, Wakad, Pune, Pune \u2014 Showtimes & Movie Tickets | District",
+      "url": "https://www.district.in/movies/inox-megaplex-phoenix-mall-of-the-millennium-wakad-in-pune-CD1023543",
+      "available": false,
+      "hash": "",
+      "summary": []
+    },
+    "https://www.district.in/movies/cinepolis-nexus-westend-aundh-pune-in-pune-CD127": {
+      "source": "District",
+      "venue": "Cinepolis Nexus Westend, Aundh, Pune, Pune \u2014 Showtimes & Movie Tickets | District",
+      "url": "https://www.district.in/movies/cinepolis-nexus-westend-aundh-pune-in-pune-CD127",
+      "available": false,
+      "hash": "",
+      "summary": []
+    }
+  },
+  "last_checked_at": "2026-06-08T00:36:03"
+}
