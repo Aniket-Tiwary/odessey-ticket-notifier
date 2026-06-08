@@ -551,6 +551,12 @@ def http_post_json(url, headers=None, json=None, timeout=20):
 
 
 def open_request(request, timeout):
+    if not request.has_header("User-agent"):
+        request.add_header(
+            "User-Agent",
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+            "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0 Safari/537.36"
+        )
     try:
         with urlopen(request, timeout=timeout) as response:
             return HttpResponse(
@@ -602,6 +608,7 @@ def main():
         "bookmyshow": build_bms_state(bms_shows, bms_dates),
         "district": district_state,
         "test_email_sent": old_state.get("test_email_sent", False),
+        "last_checked_at": datetime.now().isoformat(timespec='seconds'),
     }
 
     changes = []
