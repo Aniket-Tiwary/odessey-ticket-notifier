@@ -4,8 +4,14 @@ import os
 import re
 import sys
 from dataclasses import asdict, dataclass, field
-from datetime import datetime
+from datetime import datetime, timezone, timedelta
 from html import escape
+
+IST = timezone(timedelta(hours=5, minutes=30))
+
+
+def get_now_ist():
+    return datetime.now(timezone.utc).astimezone(IST)
 from html.parser import HTMLParser
 from urllib.error import HTTPError, URLError
 from urllib.parse import urlparse
@@ -485,7 +491,7 @@ def send_email(subject, changes, bms_shows, district_state):
         print("Skipping email: RESEND_API_KEY or RESEND_TO_EMAIL is missing.")
         return False
 
-    now = datetime.now().strftime("%d %b %Y, %I:%M %p")
+    now = get_now_ist().strftime("%d %b %Y, %I:%M %p")
     plain = [subject, f"Checked at: {now}", "", "Changes:"]
     plain.extend(f"- {change}" for change in changes)
     plain.append("")
@@ -598,7 +604,7 @@ def dedupe(values):
 
 
 def main():
-    print(f"[{datetime.now().isoformat(timespec='seconds')}] Ticket checker")
+    print(f"[{get_now_ist().isoformat(timespec='seconds')}] Ticket checker")
     old_state = load_state()
 
     movie_info, bms_shows, bms_dates = check_bookmyshow()
@@ -608,7 +614,7 @@ def main():
         "bookmyshow": build_bms_state(bms_shows, bms_dates),
         "district": district_state,
         "test_email_sent": old_state.get("test_email_sent", False),
-        "last_checked_at": datetime.now().isoformat(timespec='seconds'),
+        "last_checked_at": get_now_ist().isoformat(timespec='seconds'),
     }
 
     changes = []
