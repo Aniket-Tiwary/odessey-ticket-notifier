@@ -18,6 +18,22 @@ from urllib.parse import urlparse
 from urllib.request import Request, urlopen
 
 
+def load_dotenv(path):
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            for line in f:
+                line = line.strip()
+                if not line or line.startswith("#"):
+                    continue
+                if "=" in line:
+                    key, value = line.split("=", 1)
+                    os.environ[key.strip()] = value.strip().strip('"').strip("'")
+    except FileNotFoundError:
+        pass
+
+
+load_dotenv(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".env"))
+
 STATE_FILE = os.getenv("STATE_FILE", "ticket_state.json")
 
 CONFIG = {
