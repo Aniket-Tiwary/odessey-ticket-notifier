@@ -17,11 +17,12 @@
       "venue": "INOX Megaplex, Phoenix Mall of the Millennium, Wakad, Pune, Pune \u2014 Showtimes & Movie Tickets | District",
       "url": "https://www.district.in/movies/inox-megaplex-phoenix-mall-of-the-millennium-wakad-in-pune-CD1023543",
       "available": true,
-      "hash": "1ae0e5a822791a2c686a94232d622cb0110ed74c6567bf3f44314ac804abe12e",
+      "hash": "3498de974036bfd90954623ad4cbbcaadffc3eebd331ad68f310a93a62160da8",
       "summary": [
         "The Odyssey",
         "Drishyam 3 (2026)",
         "Project Hail Mary",
+        "The Super Mario Galaxy Movie",
         "The Devil Wears Prada 2",
         "Dhurandhar The Revenge",
         "Mollywood Times",
@@ -35,8 +36,7 @@
         "Romance",
         "Thriller",
         "Movies in Pune by Language \u2013 Hindi, English, Marathi, Tamil & Telugu",
-        "Prefer watching movies in your language? Find the latest Hindi, English, Marathi, Tamil, Telugu, Bengali, Kannada, Malayalam, and Punjabi films playing in Pune theatres right now. Check showtimes and book tickets instantly on District.",
-        "Malayalam"
+        "Prefer watching movies in your language? Find the latest Hindi, English, Marathi, Tamil, Telugu, Bengali, Kannada, Malayalam, and Punjabi films playing in Pune theatres right now. Check showtimes and book tickets instantly on District."
       ]
     },
     "https://www.district.in/movies/cinepolis-nexus-westend-aundh-pune-in-pune-CD127": {
@@ -44,7 +44,7 @@
       "venue": "Cinepolis Nexus Westend, Aundh, Pune, Pune \u2014 Showtimes & Movie Tickets | District",
       "url": "https://www.district.in/movies/cinepolis-nexus-westend-aundh-pune-in-pune-CD127",
       "available": true,
-      "hash": "9348c9f77498d2d2f6dcb73658ae84830b4e014412376d4b6b88bb731370c687",
+      "hash": "01d1d2c2ff99f7dc2e344ad8d09b57d99c3081ed564550b4776a5d50624994af",
       "summary": [
         "The Odyssey",
         "Drishyam 3 (2026)",
@@ -53,6 +53,7 @@
         "The Devil Wears Prada 2",
         "Dhurandhar The Revenge",
         "The Sheep Detectives",
+        "Mollywood Times",
         "Daadi Ki Shaadi",
         "Movies in Pune by Genre \u2013 Action, Comedy, Romance, Thriller & More",
         "Discover movies in Pune by your favourite genre \u2014 action, comedy, romance, thriller, horror, drama, sci-fi, and family films. Browse genre-wise listings of Bollywood, Hollywood, and regional releases, and book the perfect movie night on District.",
@@ -62,11 +63,10 @@
         "Science Fiction",
         "Fantasy",
         "Romance",
-        "Thriller",
-        "Animation"
+        "Thriller"
       ]
     }
   },
   "test_email_sent": true,
-  "last_checked_at": "2026-06-08T10:27:58+05:30"
+  "last_checked_at": "2026-06-08T15:22:45+05:30"
 }
