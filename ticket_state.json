@@ -17,7 +17,7 @@
       "venue": "INOX Megaplex, Phoenix Mall of the Millennium, Wakad, Pune, Pune \u2014 Showtimes & Movie Tickets | District",
       "url": "https://www.district.in/movies/inox-megaplex-phoenix-mall-of-the-millennium-wakad-in-pune-CD1023543",
       "available": true,
-      "hash": "3498de974036bfd90954623ad4cbbcaadffc3eebd331ad68f310a93a62160da8",
+      "hash": "d275b1364bc816112dd77ca648a1a7e456d7aae47a02e94d0ee6e8adb6a71bb8",
       "summary": [
         "The Odyssey",
         "Drishyam 3 (2026)",
@@ -35,8 +35,8 @@
         "Fantasy",
         "Romance",
         "Thriller",
-        "Movies in Pune by Language \u2013 Hindi, English, Marathi, Tamil & Telugu",
-        "Prefer watching movies in your language? Find the latest Hindi, English, Marathi, Tamil, Telugu, Bengali, Kannada, Malayalam, and Punjabi films playing in Pune theatres right now. Check showtimes and book tickets instantly on District."
+        "Animation",
+        "Movies in Pune by Language \u2013 Hindi, English, Marathi, Tamil & Telugu"
       ]
     },
     "https://www.district.in/movies/cinepolis-nexus-westend-aundh-pune-in-pune-CD127": {
@@ -44,11 +44,13 @@
       "venue": "Cinepolis Nexus Westend, Aundh, Pune, Pune \u2014 Showtimes & Movie Tickets | District",
       "url": "https://www.district.in/movies/cinepolis-nexus-westend-aundh-pune-in-pune-CD127",
       "available": true,
-      "hash": "01d1d2c2ff99f7dc2e344ad8d09b57d99c3081ed564550b4776a5d50624994af",
+      "hash": "3dd829b1e251d90d6e775780811591533d2f383a43b0175c5b42825d25f062dc",
       "summary": [
         "The Odyssey",
+        "Peddi",
         "Drishyam 3 (2026)",
         "Project Hail Mary",
+        "Bandar",
         "The Super Mario Galaxy Movie",
         "The Devil Wears Prada 2",
         "Dhurandhar The Revenge",
@@ -61,12 +63,10 @@
         "Adventure",
         "Comedy",
         "Science Fiction",
-        "Fantasy",
-        "Romance",
-        "Thriller"
+        "Fantasy"
       ]
     }
   },
   "test_email_sent": true,
-  "last_checked_at": "2026-06-08T15:22:45+05:30"
+  "last_checked_at": "2026-06-08T19:49:40+05:30"
 }
