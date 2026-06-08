@@ -2,13 +2,13 @@
   "bookmyshow": {
     "shows": {},
     "dates": {
-      "20260608": "NOT_OPEN",
       "20260609": "NOT_OPEN",
       "20260610": "NOT_OPEN",
       "20260611": "NOT_OPEN",
       "20260612": "NOT_OPEN",
       "20260613": "NOT_OPEN",
-      "20260614": "NOT_OPEN"
+      "20260614": "NOT_OPEN",
+      "20260615": "NOT_OPEN"
     }
   },
   "district": {
@@ -17,7 +17,34 @@
       "venue": "INOX Megaplex, Phoenix Mall of the Millennium, Wakad, Pune, Pune \u2014 Showtimes & Movie Tickets | District",
       "url": "https://www.district.in/movies/inox-megaplex-phoenix-mall-of-the-millennium-wakad-in-pune-CD1023543",
       "available": true,
-      "hash": "387b72b9224d497bd96ddb07544137a4966a60d077862147f8d4f5f24d471f21",
+      "hash": "252dba35aa7f93d74d86da58f562bd84d1da4b0cdfb481b3f1c366fe23b9e1dc",
+      "summary": [
+        "The Odyssey",
+        "Project Hail Mary",
+        "The Devil Wears Prada 2",
+        "Dhurandhar The Revenge",
+        "Daadi Ki Shaadi",
+        "Movies in Pune by Genre \u2013 Action, Comedy, Romance, Thriller & More",
+        "Discover movies in Pune by your favourite genre \u2014 action, comedy, romance, thriller, horror, drama, sci-fi, and family films. Browse genre-wise listings of Bollywood, Hollywood, and regional releases, and book the perfect movie night on District.",
+        "Action",
+        "Adventure",
+        "Science Fiction",
+        "Fantasy",
+        "Romance",
+        "Thriller",
+        "Movies in Pune by Language \u2013 Hindi, English, Marathi, Tamil & Telugu",
+        "Prefer watching movies in your language? Find the latest Hindi, English, Marathi, Tamil, Telugu, Bengali, Kannada, Malayalam, and Punjabi films playing in Pune theatres right now. Check showtimes and book tickets instantly on District.",
+        "Korean",
+        "Tamil",
+        "Explore the Best Movies Currently Showing in Popular Cities!"
+      ]
+    },
+    "https://www.district.in/movies/cinepolis-nexus-westend-aundh-pune-in-pune-CD127": {
+      "source": "District",
+      "venue": "Cinepolis Nexus Westend, Aundh, Pune, Pune \u2014 Showtimes & Movie Tickets | District",
+      "url": "https://www.district.in/movies/cinepolis-nexus-westend-aundh-pune-in-pune-CD127",
+      "available": true,
+      "hash": "c008cb75d2b7ea2f502a425a08f029ce6027b141a5c5aada6ca422e1c8ffa92d",
       "summary": [
         "The Odyssey",
         "Drishyam 3 (2026)",
@@ -26,7 +53,6 @@
         "The Devil Wears Prada 2",
         "Dhurandhar The Revenge",
         "The Sheep Detectives",
-        "Mollywood Times",
         "Daadi Ki Shaadi",
         "Movies in Pune by Genre \u2013 Action, Comedy, Romance, Thriller & More",
         "Discover movies in Pune by your favourite genre \u2014 action, comedy, romance, thriller, horror, drama, sci-fi, and family films. Browse genre-wise listings of Bollywood, Hollywood, and regional releases, and book the perfect movie night on District.",
@@ -36,37 +62,11 @@
         "Science Fiction",
         "Fantasy",
         "Romance",
-        "Thriller"
-      ]
-    },
-    "https://www.district.in/movies/cinepolis-nexus-westend-aundh-pune-in-pune-CD127": {
-      "source": "District",
-      "venue": "Cinepolis Nexus Westend, Aundh, Pune, Pune \u2014 Showtimes & Movie Tickets | District",
-      "url": "https://www.district.in/movies/cinepolis-nexus-westend-aundh-pune-in-pune-CD127",
-      "available": true,
-      "hash": "2259ee95c83fb6974485f4e4e4db82f928258ef401e6c1b2b89b832ed8f52142",
-      "summary": [
-        "The Odyssey",
-        "Peddi",
-        "Drishyam 3 (2026)",
-        "Project Hail Mary",
-        "He-Man and the Masters of the Universe",
-        "Bandar",
-        "Hai Jawani Toh Ishq Hona Hai",
-        "The Super Mario Galaxy Movie",
-        "The Devil Wears Prada 2",
-        "Dhurandhar The Revenge",
-        "The Sheep Detectives",
-        "Mollywood Times",
-        "Daadi Ki Shaadi",
-        "Tumbadchi Manjula",
-        "Movies in Pune by Genre \u2013 Action, Comedy, Romance, Thriller & More",
-        "Discover movies in Pune by your favourite genre \u2014 action, comedy, romance, thriller, horror, drama, sci-fi, and family films. Browse genre-wise listings of Bollywood, Hollywood, and regional releases, and book the perfect movie night on District.",
-        "Action",
-        "Adventure"
+        "Thriller",
+        "Animation"
       ]
     }
   },
   "test_email_sent": true,
-  "last_checked_at": "2026-06-08T23:01:37+05:30"
+  "last_checked_at": "2026-06-09T01:18:53+05:30"
 }
