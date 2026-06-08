@@ -1,26 +1,72 @@
 {
   "bookmyshow": {
     "shows": {},
-    "dates": {}
+    "dates": {
+      "20260608": "NOT_OPEN",
+      "20260609": "NOT_OPEN",
+      "20260610": "NOT_OPEN",
+      "20260611": "NOT_OPEN",
+      "20260612": "NOT_OPEN",
+      "20260613": "NOT_OPEN",
+      "20260614": "NOT_OPEN"
+    }
   },
   "district": {
     "https://www.district.in/movies/inox-megaplex-phoenix-mall-of-the-millennium-wakad-in-pune-CD1023543": {
       "source": "District",
       "venue": "INOX Megaplex, Phoenix Mall of the Millennium, Wakad, Pune, Pune \u2014 Showtimes & Movie Tickets | District",
       "url": "https://www.district.in/movies/inox-megaplex-phoenix-mall-of-the-millennium-wakad-in-pune-CD1023543",
-      "available": false,
-      "hash": "",
-      "summary": []
+      "available": true,
+      "hash": "1ae0e5a822791a2c686a94232d622cb0110ed74c6567bf3f44314ac804abe12e",
+      "summary": [
+        "The Odyssey",
+        "Drishyam 3 (2026)",
+        "Project Hail Mary",
+        "The Devil Wears Prada 2",
+        "Dhurandhar The Revenge",
+        "Mollywood Times",
+        "Daadi Ki Shaadi",
+        "Movies in Pune by Genre \u2013 Action, Comedy, Romance, Thriller & More",
+        "Discover movies in Pune by your favourite genre \u2014 action, comedy, romance, thriller, horror, drama, sci-fi, and family films. Browse genre-wise listings of Bollywood, Hollywood, and regional releases, and book the perfect movie night on District.",
+        "Action",
+        "Adventure",
+        "Science Fiction",
+        "Fantasy",
+        "Romance",
+        "Thriller",
+        "Movies in Pune by Language \u2013 Hindi, English, Marathi, Tamil & Telugu",
+        "Prefer watching movies in your language? Find the latest Hindi, English, Marathi, Tamil, Telugu, Bengali, Kannada, Malayalam, and Punjabi films playing in Pune theatres right now. Check showtimes and book tickets instantly on District.",
+        "Malayalam"
+      ]
     },
     "https://www.district.in/movies/cinepolis-nexus-westend-aundh-pune-in-pune-CD127": {
       "source": "District",
       "venue": "Cinepolis Nexus Westend, Aundh, Pune, Pune \u2014 Showtimes & Movie Tickets | District",
       "url": "https://www.district.in/movies/cinepolis-nexus-westend-aundh-pune-in-pune-CD127",
-      "available": false,
-      "hash": "",
-      "summary": []
+      "available": true,
+      "hash": "9348c9f77498d2d2f6dcb73658ae84830b4e014412376d4b6b88bb731370c687",
+      "summary": [
+        "The Odyssey",
+        "Drishyam 3 (2026)",
+        "Project Hail Mary",
+        "The Super Mario Galaxy Movie",
+        "The Devil Wears Prada 2",
+        "Dhurandhar The Revenge",
+        "The Sheep Detectives",
+        "Daadi Ki Shaadi",
+        "Movies in Pune by Genre \u2013 Action, Comedy, Romance, Thriller & More",
+        "Discover movies in Pune by your favourite genre \u2014 action, comedy, romance, thriller, horror, drama, sci-fi, and family films. Browse genre-wise listings of Bollywood, Hollywood, and regional releases, and book the perfect movie night on District.",
+        "Action",
+        "Adventure",
+        "Comedy",
+        "Science Fiction",
+        "Fantasy",
+        "Romance",
+        "Thriller",
+        "Animation"
+      ]
     }
   },
   "test_email_sent": true,
-  "last_checked_at": "2026-06-08T09:01:08+05:30"
+  "last_checked_at": "2026-06-08T10:27:58+05:30"
 }
